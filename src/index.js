@@ -5,5 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
+import { FavoritesContextProvider } from './store/favorites-context';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<BrowserRouter><App /></BrowserRouter>);
+ReactDOM.createRoot(document.getElementById('root')).render(<FavoritesContextProvider><BrowserRouter><App /></BrowserRouter></FavoritesContextProvider>);
